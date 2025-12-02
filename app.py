@@ -6,7 +6,7 @@ model = joblib.load("KNN_heart.pkl")
 scaler = joblib.load("scaler.pkl")
 excepted_columns = joblib.load("columns.pkl")
 
-st.title("Heart stroke prediction by Yug")
+st.title("HeartX❤️")
 st.markdown("Provide the following details")
 
 age = st.slider("Age",18,100,40)
@@ -60,4 +60,5 @@ if st.button("Predict"):
     if prediction == 1:
         st.error("⚠️ High Risk of Heart Disease")
     else:
+
         st.success("✅ Low Risk of Heart Disease")
